@@ -1,9 +1,7 @@
 
 function sum(a, b) {
     if(Array.isArray(a)) {
-        let total = 0;
-        a.forEach((i) => (total += i));
-        return total;
+       return a.reduce((total, i) => total + i, 0)
     }
     return a + b;
 }
